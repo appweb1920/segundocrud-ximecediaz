@@ -13,9 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () {return view('welcome');});
+
+Route::get('/piezas','PiezasController@index');
+Route::get('/agrega','PiezasController@agrega');
+Route::post('/add', 'PiezasController@store');
+Route::get('/editar/{id}', 'PiezasController@MuestraEdicion');
+Route::post('/editar/guardaEdicion', 'PiezasController@guardaEdicion');
+
+Route::get('/borrar/{id}', 'PiezasController@destroy');
 
 Auth::routes();
 
