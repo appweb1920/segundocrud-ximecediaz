@@ -15,6 +15,17 @@
                     <label for="textpiece">Descripción </label>
                 </div>
             </div>
+            <div class="row">
+                <div class="input-field col s6"><input placeholder="Número de piezas" id="textpiece" type="text" class="validate" name="numPZ">
+                    <label for="textpiece">Total de piezas</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6"><input placeholder="Precio" id="textpiece" type="text" class="validate" name="costo">
+                    <label for="textpiece">Costo por pieza</label>
+                </div>
+            </div>
+
 
             <div class="row"><input type="submit"></div>
         </form>
