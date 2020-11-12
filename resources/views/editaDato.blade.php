@@ -10,7 +10,9 @@
         <input type="text" name="descripcion" value="{{$piezas->descripcion}}">
         <input type="text" name="numPZ" value="{{$piezas->numPZ}}">
         <input type="text" name="costo" value="{{$piezas->costo}}">
-        <input type="submit">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+    <i class="material-icons right">send</i>
+  </button>
 </form>
 
 @endsection

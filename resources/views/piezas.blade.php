@@ -27,7 +27,7 @@
                 <td>{{$p->id}}</td>
                 <td>{{$p->nombre}}</td>
                 <td>{{$p->descripcion}}</td>
-                <td>{{$p->numPZ}}</td>}
+                <td>{{$p->numPZ}}</td>
                 <td>{{$p->costo}}</td>
                 <td><a href="/editar/{{$p->id}}">
                         <i class="small material-icons blue-text text-darken-3">mode_edit</i></a>
