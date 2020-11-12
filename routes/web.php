@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {return view('welcome');});
+Route::get('/piezas', function () {return view('piezas');});
 
 Route::get('/piezas','PiezasController@index');
-Route::get('/agrega','PiezasController@agrega');
+Route::get('/agrega', function () {return view('agrega');});
 Route::post('/add', 'PiezasController@store');
 Route::get('/editar/{id}', 'PiezasController@MuestraEdicion');
 Route::post('/editar/guardaEdicion', 'PiezasController@guardaEdicion');
